@@ -29,13 +29,14 @@ main section {
   margin-left: 5%;
 }
 
-/* img {
+img {
   z-index: 0;
-} */
+}
 
 .card {
   background-color: lightgray;
-  width: 50%;
+  width: 280px;
+  margin-bottom: 4%;
 }
 
 .card-btn {
@@ -45,12 +46,16 @@ main section {
 .img-container {
   display: flex;
   justify-content: space-between;
-  z-index: 1;
+  height: 30%;
 }
 
 .views-container {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.views-container, .card-btn {
+  z-index: 1;
 }
 
 @media screen and (max-width: 800px) {
