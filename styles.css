@@ -63,10 +63,12 @@ img {
 }
 
 .card {
+  position: relative;
   background-color: lightgray;
   width: 220px;
   height: 300px;
   margin-bottom: 4%;
+  /* z-index: 0; */
 }
 
 .card-btn {
@@ -75,24 +77,101 @@ img {
 
 .img-container {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   height: 30%;
   padding: 3%;
+  background: url(https://preview.redd.it/mrxef46hc1271.jpg?width=960&crop=smart&auto=webp&s=95b32173e885c515614bf6bcda0545a234b546d0);
+  background-size: cover;
+  /* filter: brightness(0.5); */
+  z-index: 0;
 }
 
+.img-container-test {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+  /* padding: 3%; */
+  /* background: url(https://preview.redd.it/mrxef46hc1271.jpg?width=960&crop=smart&auto=webp&s=95b32173e885c515614bf6bcda0545a234b546d0);
+  background-size: cover; */
+  /* filter: brightness(0.5); */
+  z-index: 0;
+}
+
+.img-container * {
+  z-index: 4;
+}
+
+.img-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(https://preview.redd.it/mrxef46hc1271.jpg?width=960&crop=smart&auto=webp&s=95b32173e885c515614bf6bcda0545a234b546d0);
+  background-size: cover;
+  filter: brightness(0.7);
+}
+
+
+/* .img-container::after {
+  content: '';
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.24);
+  z-index: 2;
+} */
+/* .img-overlay {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+} */
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.24);
+  z-index: 0;
+}
+
+/* .img-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  background: url(http://lorempixel.com/300/200);
+  background-size: 100% 100%;
+} */
+
+.button-text-container {
+  display: flex;
+  position: absolute;
+  z-index: 14;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.views-container, .card-btn {
+  position: relative;
+  z-index: 4;
+}
 .views-container {
   display: flex;
   flex-direction: column-reverse;
+  /* justify-content: space-between; */
 }
 
 .views-container * {
   margin: 0;
 }
 
-.views-container, .card-btn {
-  z-index: 1;
-}
 
 .text-container {
   display: flex;
