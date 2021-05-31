@@ -369,6 +369,7 @@ img {
   background-color: #DBD7D2;
   margin: 3% 0;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .card-box p {
