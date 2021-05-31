@@ -30,6 +30,7 @@ figcaption {
   top: 5%;
   right: 20%;
   align-self: flex-end;
+  cursor: pointer;
 }
 
 figcaption::before {
@@ -40,27 +41,43 @@ figcaption::before {
   top: 4%;
   left: -35%;
   color: #D45D62;
+  transition: all .2s ease;
+}
+
+figcaption:hover::before {
+  transform: translateX(-12px);
 }
 
 figcaption::after {
-    color: #ffb88c;
+  color: #ffb88c;
   font-family: 'Font Awesome 5 Free';
   content: '\f83e';
   font-weight: 900;
   position: absolute;
   top: 4%;
   left: 109%;
+  transition: all .2s ease
+}
+
+figcaption:hover::after {
+  transform: translateX(12px);
 }
 
 figure {
   width: 100%;
 }
 
-h1 {
+nav h1 {
   letter-spacing: .02em;
   font-weight: 700;
   margin-left: 1.5%;
   text-align: right;
+}
+
+main h1 {
+  margin-top: 6%;
+  margin-left: 2%;
+  color: #322d31;
 }
 
 .spacer {
@@ -87,7 +104,7 @@ ul {
 
 ul li {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   cursor: pointer;
   text-transform: capitalize;
   font-weight: 300;
@@ -145,7 +162,7 @@ li::after {
   background: rgb(237,166,146);
   background: linear-gradient(90deg, rgba(237,166,146,1) 0%, rgba(255,201,163,1) 100%);
   transition: all 0.2s 0s ease;
-  z-index: 0;
+  z-index: -1;
 }
 
 .one::after {
@@ -157,13 +174,12 @@ li::after {
 }
 
 .three::after {
-  transform: translate(-68px, 17px);
+  transform: translate(-69px, 17px);
 }
 
 li:hover::after {
-  width: 80%;
+  width: 82%;
 }
-
 
 main {
   margin-top: 8%;
@@ -173,10 +189,6 @@ h5 {
   text-transform: uppercase;
   color: #333333;
 }
-
-/* main * {
-  transition: all .1s linear;
-} */
 
 main section {
   display: grid;
@@ -244,7 +256,7 @@ img {
 }
 
 img:hover {
-  filter: brightness(0.68);
+  filter: brightness(0.78);
 }
 
 .circle::after {
@@ -391,6 +403,12 @@ img:hover {
 
 
 /* MEDIA QUERIES SECTION */
+@media screen and (max-width: 1280px) {
+  main h1 {
+    margin-top: 11%;
+    /* margin-left: 2%; */
+  }
+}
 
 @media screen and (max-width: 962px) {
   main section {
@@ -400,11 +418,15 @@ img:hover {
   }
 
   main {
-    margin-top: 15%;
+    margin-top: 12%;
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  main h1 {
+    margin-top: 5%
   }
 
   figcaption {
@@ -412,12 +434,22 @@ img:hover {
   }
 }
 
+
+
 @media screen and (max-width: 726px) {
 
   main section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  nav {
+    height: 10%;
+  }
+
+  main h1 {
+    margin-top: 20%;
   }
 
   ul {
@@ -452,19 +484,29 @@ img:hover {
   }
 
   nav {
-    height: 12%;
+    height: 17%;
   }
 
   main {
-    margin-top: 25%;
+    margin-top: 30%;
   }
 
   h1 {
     font-size: 16px;
   }
 
+  main h1 {
+    margin-top: 25%;
+  }
+
   figcaption {
     right: 8%;
+  }
+}
+
+@media screen and (max-width: 373px) {
+  main h1 {
+    margin-top: 30%;
   }
 }
 
@@ -476,8 +518,19 @@ img:hover {
 
 @media screen and (max-width: 280px) {
 
+  nav div {
+    margin-right: 1%;
+  }
+
+  figcaption {
+    margin-right: 2%;
+  }
   main {
-    margin-top: 30%;
+    margin-top: 20%;
+  }
+
+  main h1 {
+    margin-top: 40%;
   }
   ul {
     padding: 0;
