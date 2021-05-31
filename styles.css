@@ -13,7 +13,7 @@ nav {
   width: 100%;
   z-index: 5;
   background-color: white;
-  color: black;
+  color: #333333;
   width: 100vw;
   box-shadow: 0px 8px 14px -5px rgba(0,0,0,0.18);
   margin-bottom: 10%;
@@ -39,6 +39,7 @@ figcaption::before {
   position: absolute;
   top: 4%;
   left: -35%;
+  color: #D45D62;
 }
 
 figcaption::after {
@@ -167,9 +168,9 @@ main {
   margin-top: 8%;
 }
 
-main * {
+/* main * {
   transition: all .1s linear;
-}
+} */
 
 main section {
   display: grid;
@@ -187,15 +188,6 @@ img {
   object-fit: cover;
   transition: all .2s linear;
 }
-
-/* img::after {
-  content: '';
-  background: black;
-  width: 800px;
-  height: 900px;
-  position: absolute;
-  z-index: 15;
-} */
 
 .card {
   position: relative;
@@ -339,6 +331,8 @@ img:hover {
   margin: 3% 0;
   border-radius: 4px;
   cursor: pointer;
+  height: 35px;
+  transition: all .2s ease;
 }
 
 .card-box p {
@@ -362,8 +356,8 @@ img:hover {
   position: absolute;
   content: '';
   width: 0;
-  height: 37px;
-  transform: translate(0px, -37px);
+  height: 35px;
+  transform: translate(0px, -34.5px);
   border-radius: 4px;
   background: linear-gradient(90deg, rgba(237,166,146,1) 0%, rgba(255,201,163,1) 100%);
   transition: all .2s linear;
@@ -437,7 +431,7 @@ img:hover {
   }
 
   nav {
-    height: 10%;
+    height: 12%;
   }
 
   main {
@@ -453,6 +447,12 @@ img:hover {
   }
 }
 
+@media screen and (max-width: 320px) {
+  nav {
+    height: 15%;
+  }
+}
+
 @media screen and (max-width: 280px) {
 
   main {
@@ -461,9 +461,5 @@ img:hover {
   ul {
     padding: 0;
     width: 100%;
-  }
-
-  .card {
-    width: 90%;
   }
 }
