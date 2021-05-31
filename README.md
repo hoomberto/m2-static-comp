@@ -10,7 +10,7 @@ Turing 2103 FE Final Solo Project
 * [Languages](#Languages)
 
 ## Introduction
-This is an interactive website that is meant to demonstrate an understanding of HTML, CSS, and responsive design.
+This is an interactive website that is meant to demonstrate an understanding of HTML, CSS, and responsive design. The challenge was to recreate a webpage based off of a provided static comp
 
 Original Comp: 
 ![alt text](https://frontend.turing.edu/assets/images/static-comp-challenge-2.jpg "Original Comp")
