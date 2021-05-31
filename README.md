@@ -4,6 +4,7 @@ Turing 2103 FE Final Solo Project
 ## Table of Contents
 * [Introduction](#introduction)
 * [Links](#Links)
+* [Setup](#Setup)
 * [Features](#Features)
 * [Future Additions](#Future-Additions)
 * [Contributors](#Contributors)
@@ -16,8 +17,10 @@ Original Comp:
 ![alt text](https://frontend.turing.edu/assets/images/static-comp-challenge-2.jpg "Original Comp")
 
 ## Links  
+View project in action here: https://hoomberto.github.io/m2-static-comp/
 
-View project in action here https://hoomberto.github.io/m2-static-comp/
+## Setup
+Fork and/or clone repo, open index.html in browser
 
 ## Features
 Works across Firefox, Safari, Chrome<br>
