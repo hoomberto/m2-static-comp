@@ -34,7 +34,7 @@ nav div {
 figcaption {
   position: absolute;
   top: 5%;
-  right: 5%;
+  right: 20%;
   align-self: flex-end;
   /* margin-right: 3%; */
 }
@@ -62,6 +62,9 @@ figure {
 }
 
 h1 {
+  /* font-family: 'Montserrat', sans-serif; */
+  letter-spacing: .02em;
+  font-weight: 700;
   margin-left: 1.5%;
   text-align: right;
 }
@@ -345,7 +348,6 @@ img::after {
 .text-container {
   display: flex;
   flex-direction: column-reverse;
-  /* border-top: 1px solid #333333; */
   padding: 5%;
 }
 
@@ -361,7 +363,6 @@ img::after {
 }
 
 .text-container h2 {
-  /* text-shadow: 1px 1px 3px rgba(102, 102, 102, 0.28); */
   color: #D45D62;
   margin-top: 1%;
 }
@@ -382,6 +383,9 @@ img::after {
   margin: 9px 0;
   margin-left: 3%;
   z-index: 2;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 .card-box p::after {
   position: absolute;
@@ -390,7 +394,6 @@ img::after {
   font-weight: 900;
   transform: translate(70px, 1px)
 }
-
 
 .card-box::after {
   position: absolute;
@@ -425,6 +428,10 @@ img::after {
   h1 {
     font-size: 20px;
   }
+
+  figcaption {
+    right: 15%;
+  }
 }
 
 @media screen and (max-width: 726px) {
@@ -453,6 +460,11 @@ img::after {
   .three:hover::after {
     width: 70px;
   }
+
+  figcaption {
+    right: 12%;
+    /* margin-right: 3%; */
+  }
 }
 
 @media screen and (max-width: 484px) {
@@ -473,10 +485,10 @@ img::after {
     h1 {
       font-size: 16px;
     }
-  /* ul {
-    display: flex;
-    flex-direction: column;
-  } */
+
+    figcaption {
+      right: 8%;
+    }
 }
 
 @media screen and (max-width: 280px) {
