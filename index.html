@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,19 @@
   <body>
     <nav>
       <ul>
-        <li class="one">Shares</li>
-        <li class="two">Playlists</li>
-        <li class="three">Personal Videos</li>
+        <div class="li-container">
+          <li class="one icon contact">Contact</li>
+        </div>
+        <div class="li-container">
+          <li class="two">Playlists</li>
+
+        </div>
+        <div class="li-container">
+
+          <li class="three">Personal Videos</li>
+        </div>
       </ul>
-      <div class="">
+      <div id="darkLight" class="admin-container">
         <figcaption>Admin</figcaption>
         <figure>
           <h1>Bobby V</h1>
@@ -35,23 +44,13 @@
 
               <button type="button" class="card-btn" name="button">Go Back</button>
               <div class="views-container">
-                <h2>02</h2>
+                <h2>1.2k</h2>
                 <h3>Views</h3>
               </div>
 
             </div>
             <!-- <img src="" alt="img"> -->
           </div>
-
-
-          <!-- <img class="img-container">
-          <div class="img-overlay">
-            <div class="overlay"></div>
-            <button type="button" class="card-btn" name="button">Go Back</button>
-            <div class="views-container">
-              <h2>02</h2>
-              <h3>Views</h3>
-            </div> -->
 
 
             </div>
@@ -66,8 +65,8 @@
               <p>linktext</p>
             </div>
             <div class="top-card-text">
-              <h5>Recipient Name Here</h5>
-              <p>Friday May 28 2021</p>
+              <h5>Feat. Annabelle</h5>
+              <p>BTS Video Shoot</p>
             </div>
           </div>
         </article>
@@ -234,5 +233,25 @@
         </article>
       </section>
     </main>
+    <script src="https://kit.fontawesome.com/4f6e467d8c.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+      const toggleDarkMode = () => {
+        // alert('WORKING')
+        spacer.classList.toggle('spacer-dark')
+        nav.classList.toggle('nav-dark')
+        body.classList.toggle('body-dark')
+      }
+
+      const darkMode = document.getElementById('darkLight');
+      const body = document.querySelector('body');
+      const nav = document.querySelector('nav');
+      const spacer = document.querySelector('.spacer');
+      darkMode.addEventListener('click', toggleDarkMode);
+
+
+
+
+    </script>
   </body>
 </html>
