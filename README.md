@@ -40,5 +40,5 @@ Site has been formatted to have properly adjusted elements for all devices provi
 [Bobby Vasquez](https://github.com/hoomberto/)<br>
 
 ## Languages
-HTML
+HTML<br>
 CSS  
