@@ -20,6 +20,8 @@ Original Comp:
 View project in action here https://hoomberto.github.io/m2-static-comp/
 
 ## Features
+Works across Firefox, Safari, Chrome<br>
+
 Fixed navigation bar with interactive and responsive elements<br>
 ![alt text](https://media.giphy.com/media/DDpghY3YKcX7EvVcJi/giphy.gif "Responsive Nav Bar")
 
