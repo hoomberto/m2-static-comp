@@ -43,6 +43,7 @@ figcaption::before {
 }
 
 figcaption::after {
+    color: #ffb88c;
   font-family: 'Font Awesome 5 Free';
   content: '\f83e';
   font-weight: 900;
@@ -168,6 +169,11 @@ main {
   margin-top: 8%;
 }
 
+h5 {
+  text-transform: uppercase;
+  color: #333333;
+}
+
 /* main * {
   transition: all .1s linear;
 } */
@@ -264,10 +270,6 @@ img:hover {
   z-index: 0;
 }
 
-.top-card-text {
-  display: flex;
-  flex-direction: column-reverse;
-}
 
 .button-text-container {
   display: flex;
@@ -301,6 +303,8 @@ img:hover {
   margin: 0;
 }
 
+/* TEXT CONTAINER SECTION */
+
 .text-container {
   display: flex;
   flex-direction: column-reverse;
@@ -311,19 +315,21 @@ img:hover {
   margin: 0;
 }
 
-.num-text {
-  margin-top: 1%;
-  color: #333333;
-  font-weight: 300;
-}
+
 
 .text-container h2 {
   color: #D45D62;
   margin-top: 1%;
 }
 
+.text-container h3 {
+  color: #322d31;
+}
+
 .text-container h4 {
   margin: 1% 0;
+  font-size: 14px;
+  color: #D45D62;
 }
 
 .card-box {
@@ -370,6 +376,21 @@ img:hover {
 .card-box:hover {
   color: white;
 }
+
+.num-text {
+  margin-top: 1%;
+  /* color: #333333; */
+  font-weight: 300;
+}
+
+.top-card-text {
+  display: flex;
+  flex-direction: column-reverse;
+  color: #322d31;
+}
+
+
+/* MEDIA QUERIES SECTION */
 
 @media screen and (max-width: 962px) {
   main section {
