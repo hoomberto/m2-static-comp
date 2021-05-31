@@ -33,7 +33,7 @@ Site has been formatted to have properly adjusted elements for all devices provi
 ![alt text](https://media.giphy.com/media/0xdqLt7qg18gJdxkRf/giphy.gif "Mobile formatted")
 
 Site is designed with accessibility in mind, passing the dev console lighthouse audit with 100% score<br>
-![alt text](https://ibb.co/cYFfvjV "Lighthouse Audit Results")
+![alt text](https://i.ibb.co/hYWQMSw/Screen-Shot-2021-05-31-at-4-27-29-PM.png "Lighthouse Audit Results")
 
 ### Future Additions
 - Add dark mode functionality so that when a user clicks an indicated button, the site's palette shifts. 
