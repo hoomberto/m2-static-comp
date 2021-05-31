@@ -16,7 +16,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
   background-color: white;
   color: black;
   width: 100vw;
@@ -28,10 +28,42 @@ nav div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* width: 90%; */
+}
+
+figcaption {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  align-self: flex-end;
+  /* margin-right: 3%; */
+}
+
+figcaption::before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f083';
+  font-weight: 900;
+  position: absolute;
+  top: 4%;
+  left: -35%;
+}
+
+figcaption::after {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f83e';
+  font-weight: 900;
+  position: absolute;
+  top: 4%;
+  left: 109%;
 }
 
 figure {
   width: 100%;
+}
+
+h1 {
+  margin-left: 1.5%;
+  text-align: right;
 }
 
 /* nav::after {
@@ -190,10 +222,7 @@ main section {
   margin-left: 5%;
 }
 
-h1 {
-  margin-left: 1.5%;
-  text-align: right;
-}
+
 
 img {
   z-index: 0;
@@ -468,10 +497,14 @@ img {
 @media screen and (max-width: 280px) {
 
   main {
-    margin-top: 25%;
+    margin-top: 30%;
   }
   ul {
     padding: 0;
     width: 100%;
+  }
+
+  .card {
+    width: 90%;
   }
 }
