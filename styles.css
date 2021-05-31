@@ -50,9 +50,9 @@ figure {
 } */
 
 .spacer {
-  height: 1%;
-  position: fixed;
-  top: 16%;
+  height: 10px;
+  position: absolute;
+  top: 100%;
   left: 50%;
   z-index: -1;
   width: 100vw;
@@ -192,6 +192,7 @@ main section {
 
 h1 {
   margin-left: 1.5%;
+  text-align: right;
 }
 
 img {
@@ -200,7 +201,7 @@ img {
 
 .card {
   position: relative;
-  background-color: white;
+  background-color: #F5F5F5;
   width: 220px;
   height: 300px;
   margin-bottom: 4%;
@@ -221,7 +222,7 @@ img {
   padding: 3%;
   background: url(https://preview.redd.it/mrxef46hc1271.jpg?width=960&crop=smart&auto=webp&s=95b32173e885c515614bf6bcda0545a234b546d0);
   background-size: cover;
-  /* filter: brightness(0.5); */
+  filter: brightness(0.5);
   z-index: 0;
 }
 
@@ -243,9 +244,10 @@ img {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url(./assets/IMG_0142.jpg);
-  background-size: cover;
-  filter: brightness(0.5);
+  /* background: url(./assets/IMG_0142.jpg); */
+  /* background-size: contain; */
+  filter: brightness(0.4);
+  object-fit: cover;
   transition: all .2s linear;
 }
 
@@ -321,6 +323,7 @@ img {
   transform: translateX(-10px);
   color: white;
   text-transform: uppercase;
+  text-shadow: 1px 2px 3px #666;
   /* justify-content: space-between; */
 }
 
@@ -353,7 +356,8 @@ img {
 }
 
 .text-container h2 {
-  color: blue;
+  /* text-shadow: 1px 1px 3px rgba(102, 102, 102, 0.28); */
+  color: #D45D62;
   margin-top: 1%;
 }
 
@@ -404,6 +408,10 @@ img {
   main {
     margin-top: 15%;
   }
+
+  h1 {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 726px) {
@@ -445,6 +453,10 @@ img {
 
     main {
       margin-top: 25%;
+    }
+
+    h1 {
+      font-size: 16px;
     }
   /* ul {
     display: flex;
