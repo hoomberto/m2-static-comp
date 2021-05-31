@@ -106,10 +106,6 @@ ul li {
   font-weight: 300;
 }
 
-.li-container {
-  position: relative;
-}
-
 .icon::before {
   display: inline-block;
   font-style: normal;
