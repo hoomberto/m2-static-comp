@@ -246,6 +246,7 @@ img {
   background: url(./assets/IMG_0142.jpg);
   background-size: cover;
   filter: brightness(0.5);
+  transition: all .2s linear;
 }
 
 .circle {
@@ -256,6 +257,16 @@ img {
   background-color: rgba(255, 255, 255, 0.78);
   transform: translate(2px, 3px);
   margin-left: 2%;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.circle:hover {
+  background-color: rgba(255, 255, 255, 0.58);
+}
+
+.img-1:hover {
+  filter: brightness(0.68);
 }
 
 .circle::after {
@@ -267,6 +278,11 @@ img {
   color: rgba(0, 0, 0, 0.78);
   font-size: 22px;
   transform: translate(16px, 15px)
+}
+
+.circle:hover::after {
+  /* letter-spacing: 1em; */
+  color: white;
 }
 
 
@@ -352,8 +368,30 @@ img {
 }
 
 .card-box p {
+  position: relative;
   margin: 9px 0;
   margin-left: 3%;
+  z-index: 2;
+}
+
+
+.card-box::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 37px;
+  transform: translate(0px, -37px);
+  border-radius: 4px;
+  background: linear-gradient(90deg, rgba(237,166,146,1) 0%, rgba(255,201,163,1) 100%);
+  transition: all .2s linear;
+}
+
+.card-box:hover::after {
+  width: 90%;
+}
+
+.card-box:hover {
+  color: white;
 }
 
 @media screen and (max-width: 962px) {
