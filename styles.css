@@ -48,7 +48,7 @@ figure {
 
 .spacer {
   height: 1%;
-  position: absolute;
+  position: fixed;
   top: 16%;
   left: 50%;
   z-index: -1;
@@ -141,7 +141,7 @@ ul li::before {
 
 .three::before {
   font-family: "Font Awesome 5 Free";
-  content: "\f72f";
+  content: "\f6be";
   font-weight: 900;
 }
 
@@ -265,7 +265,7 @@ img {
   position: relative;
   justify-content: space-between;
   align-items: center;
-  height: 30%;
+  height: 33%;
   /* padding: 3%; */
   /* background: url(https://preview.redd.it/mrxef46hc1271.jpg?width=960&crop=smart&auto=webp&s=95b32173e885c515614bf6bcda0545a234b546d0);
   background-size: cover; */
@@ -283,9 +283,36 @@ img {
   height: 100%;
   background: url(./assets/IMG_0142.jpg);
   background-size: cover;
-  filter: brightness(0.7);
+  filter: brightness(0.5);
 }
 
+.circle {
+  display: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.78);
+  transform: translate(2px, 3px);
+  margin-left: 2%;
+}
+
+.circle::after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  content: '\f101';
+  font-weight: 900;
+  z-index: 1;
+  color: rgba(0, 0, 0, 0.78);
+  font-size: 22px;
+  transform: translate(16px, 15px)
+}
+
+/* .arrow {
+  display: relative;
+  z-index: 1;
+  content: '\f101';
+  font-family:
+} */
 
 /* .img-container::after {
   content: '';
@@ -332,7 +359,9 @@ img {
   position: absolute;
   z-index: 14;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
+  transform: translateY(-20px);
+  /* padding: 2%; */
 }
 
 .views-container, .card-btn {
@@ -342,7 +371,16 @@ img {
 .views-container {
   display: flex;
   flex-direction: column-reverse;
+  transform: translateX(-10px);
+  color: white;
+  text-transform: uppercase;
   /* justify-content: space-between; */
+}
+
+.views-container h3 {
+  font-size: 14px;
+  letter-spacing: .11em;
+  font-weight: 300;
 }
 
 .views-container * {
@@ -353,7 +391,7 @@ img {
 .text-container {
   display: flex;
   flex-direction: column-reverse;
-  border-top: 1px solid #333333;
+  /* border-top: 1px solid #333333; */
   padding: 5%;
 }
 
@@ -363,22 +401,23 @@ img {
 }
 
 .num-text {
-  margin-top: 3%;
+  margin-top: 1%;
   color: #333333;
 }
 
 .text-container h2 {
   color: blue;
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 .text-container h4 {
-  margin: 2% 0;
+  margin: 1% 0;
 }
 
 .card-box {
-  background-color: lightgray;
-  margin: 2% 0;
+  background-color: #DBD7D2;
+  margin: 3% 0;
+  border-radius: 4px;
 }
 
 .card-box p {
@@ -392,9 +431,14 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+
+  main {
+    margin-top: 15%;
+  }
 }
 
 @media screen and (max-width: 726px) {
+
   main section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -428,6 +472,11 @@ img {
     grid-template-rows: repeat(1, 1fr);
   }
 
+
+
+    main {
+      margin-top: 25%;
+    }
   /* ul {
     display: flex;
     flex-direction: column;
@@ -436,6 +485,9 @@ img {
 
 @media screen and (max-width: 280px) {
 
+  main {
+    margin-top: 25%;
+  }
   ul {
     padding: 0;
     width: 100%;
