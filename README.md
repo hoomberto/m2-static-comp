@@ -20,16 +20,16 @@ Original Comp:
 View project in action here https://hoomberto.github.io/m2-static-comp/
 
 ## Features
-Fixed navigation bar with interactive and responsive elements
+Fixed navigation bar with interactive and responsive elements<br>
 ![alt text](https://media.giphy.com/media/DDpghY3YKcX7EvVcJi/giphy.gif "Responsive Nav Bar")
 
-Card elements arranged within responsive grid with interactive and responsive elements
+Card elements arranged in responsive grid with interactive and responsive elements<br>
 ![alt text](https://media.giphy.com/media/xFM5Tgxym6Apkur6Ns/giphy.gif "Responsive Card Elements")
 
-Site is responsive and adjusts elements when resized
+Site is responsive and adjusts elements when resized<br>
 ![alt text](https://media.giphy.com/media/oU2vnok499h3zNcZQ0/giphy.gif "Responsive Site")
 
-Site has been formatted to have properly adjusted elements for all devices provided in the dev console
+Site has been formatted to have properly adjusted elements for all devices provided in the dev console<br>
 ![alt text](https://media.giphy.com/media/0xdqLt7qg18gJdxkRf/giphy.gif "Mobile formatted")
 
 ### Future Additions
