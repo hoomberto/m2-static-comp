@@ -14,6 +14,8 @@ This is an interactive website that is meant to demonstrate an understanding of 
 
 ## Links  
 
+View project in action here https://hoomberto.github.io/m2-static-comp/
+
 ## Features
 
 ### Future Additions
