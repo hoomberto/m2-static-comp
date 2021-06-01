@@ -17,7 +17,7 @@ Original Comp:
 ![alt text](https://frontend.turing.edu/assets/images/static-comp-challenge-2.jpg "Original Comp")
 
 ## Links  
-View project in action here: https://hoomberto.github.io/m2-static-comp/
+View project in action here: https://hoomberto.github.io/static-comp-photo/
 
 ## Setup
 Fork and/or clone repo, open index.html in browser
